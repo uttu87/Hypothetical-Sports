@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/teamFragment"
+        android:icon="@drawable/ic_team"
+        android:title="Teams" />
+
+    <item
+        android:id="@id/previousMatchesFragment"
+        android:icon="@drawable/ic_highlight"
+        android:title="Previous Matches" />
+
+    <item
+        android:id="@id/upcomingMatchesFragment"
+        android:icon="@drawable/ic_match"
+        android:title="Upcoming Matches" />
+</menu>

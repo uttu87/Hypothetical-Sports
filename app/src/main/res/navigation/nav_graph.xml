@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/teamFragment">
+
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.isea.hypotheticalsports.views.TeamFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/previousMatchesFragment"
+        android:name="com.isea.hypotheticalsports.views.PreviousMatchesFragment"
+        android:label="fragment_matches"
+        tools:layout="@layout/fragment_matches">
+        <action
+            android:id="@+id/action_previousMatchesFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingMatchesFragment"
+        android:name="com.isea.hypotheticalsports.views.UpcomingMatchesFragment"
+        android:label="fragment_upcoming_matches"
+        tools:layout="@layout/fragment_upcoming_matches" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.isea.hypotheticalsports.views.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video">
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
